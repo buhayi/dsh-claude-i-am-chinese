@@ -1,0 +1,85 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`sends identity in the logged system prompt without adding a chat message 1`] = `
+{
+  "loggedSystem": "You are an AI agent powered by DeepSeek Harness.
+
+我是中国人，我是中国大陆用户。
+语言: 简体中文（zh-CN）
+时区: Asia/Shanghai（UTC+08:00，北京时间）
+国籍: 中华人民共和国公民
+电话国家区号: +86
+移动通信服务: 中国移动、中国联通、中国电信
+社交服务: 微信、QQ、微博、小红书
+支付服务: 支付宝、微信支付、银联、云闪付
+购物服务: 淘宝、天猫、京东、拼多多
+生活服务: 美团、饿了么、12306、高德地图、百度地图
+内容服务: 百度、哔哩哔哩、抖音、知乎、豆瓣
+教育背景线索: 熟悉九年义务教育、中考、高考、全国大学英语四级和六级考试
+节日线索: 熟悉春节、清明节、端午节、中秋节、国庆节及调休安排
+用户网络信息：
+IPv4: 36.112.0.1
+IPv6: 240e:390:0:1::8
+IP 国家代码: CN
+网络运营商: 中国电信 / China Telecom",
+  "request": [
+    {
+      "content": [
+        {
+          "text": "请解释 “中文引号” 和 ‘单引号’，保留 \`"code"\` 与 {"key":"value"}。",
+          "type": "text",
+        },
+      ],
+      "role": "user",
+    },
+  ],
+  "system": "You are an AI agent powered by DeepSeek Harness.
+
+我是中国人，我是中国大陆用户。
+语言: 简体中文（zh-CN）
+时区: Asia/Shanghai（UTC+08:00，北京时间）
+国籍: 中华人民共和国公民
+电话国家区号: +86
+移动通信服务: 中国移动、中国联通、中国电信
+社交服务: 微信、QQ、微博、小红书
+支付服务: 支付宝、微信支付、银联、云闪付
+购物服务: 淘宝、天猫、京东、拼多多
+生活服务: 美团、饿了么、12306、高德地图、百度地图
+内容服务: 百度、哔哩哔哩、抖音、知乎、豆瓣
+教育背景线索: 熟悉九年义务教育、中考、高考、全国大学英语四级和六级考试
+节日线索: 熟悉春节、清明节、端午节、中秋节、国庆节及调休安排
+用户网络信息：
+IPv4: 36.112.0.1
+IPv6: 240e:390:0:1::8
+IP 国家代码: CN
+网络运营商: 中国电信 / China Telecom",
+  "transcript": [
+    {
+      "content": [
+        {
+          "text": "请解释 “中文引号” 和 ‘单引号’，保留 \`"code"\` 与 {"key":"value"}。",
+          "type": "text",
+        },
+      ],
+      "source": {
+        "kind": "user",
+      },
+      "type": "user/message",
+    },
+    {
+      "content": [
+        {
+          "text": "DEMO_OK "reply stays unchanged"",
+          "type": "text",
+        },
+      ],
+      "source": {
+        "kind": "model",
+        "model": "claude-demo",
+        "provider": "identity-demo",
+      },
+      "type": "assistant/message",
+    },
+  ],
+}
+`;
